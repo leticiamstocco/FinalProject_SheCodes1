@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>#TOGETHERBAND</title>
+    <style>
+        h1 {
+            color:BLACK;
+            font-family: Arial, Helvetica;
+            font-size: 12px;      
+            line-height: 10px;     
+            padding: 5px;
+            text-align: center;
+        }
+
+        h2 {
+            text-align: center;            
+            padding: 5px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 10px;
+        }
+        
+        hr {
+            display: block;
+            border: 1px solid black;
+            margin: 10px 10px;
+            border-radius: 10px;
+        }
+
+        img {
+            display: block;
+            margin: 0 auto;
+            max-width: 100%;
+            border-radius: 10px;
+        }
+
+        p {
+            line-height: 1.5;
+            font-size: 13px;
+            margin: 20px 0 10px;
+        }
+
+        button {
+            display: block;
+            margin: 0px auto;
+            background: whitesmoke;
+            color: black;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+            padding: 15px 20px;
+            border: none;
+            border-radius: 10px;
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+            transition: all 200ms ease-in-out;
+        }
+
+        button:hover {
+            display: block;
+            color:  #F25A5D;
+            background: black;
+            border-radius: 10px;
+            margin: 0px auto;
+            opacity: 0.9;
+            cursor: pointer;
+            padding: 15px 20px;
+        }
+
+        .container {
+        max-width: 500px;
+        margin: 0 auto;
+        padding: 15px 20px;
+        border: 1px solid black;
+        border-radius: 10px;
+        background: #F25A5D;
+       }
+
+        .learn-more {
+            color: whitesmoke;
+            text-decoration: underline;
+            font-size: 12px;
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center; 
+        }
+
+        .learn-more:hover {
+            color:#739E5B;
+            font-size: 12px;
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+        }
+
+        .footer {
+            text-align: center;    
+        }
+
+        .variety {
+            color: whitesmoke;
+            font-style: italic;
+            font-size: 20px; 
+      }
+
+        .varietyil {
+            background-color: #F25A5D; 
+      }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <br>
+            <img src="https://cdn.shopify.com/s/files/1/0185/1418/2208/files/togetherband-logo_320x.png?v=1547047519"
+                alt="TOGETHERWEAR"/>
+        <br>
+        <h1>
+        <hr>
+            FREE SHIPPING ON ORDERS OVER £50 | COVID DELIVERY UPDATES
+        <hr>
+        </h1>
+             <img src="https://ci4.googleusercontent.com/proxy/iy0E9nrCN25crb0pX5RevZyehWRqmvfJ5MGdby2D7276Q3qNpjhTMojgnOCHZ2_bFCFXjSRZTLVvItWjHnWcS1B_gv2w2I-jzRV-mCeTN706XjCzvfZ-IhiBQ--nbue9SzbAatb6-o1_5Gxa2_xw1_saJu3P0A=s0-d-e1-ft#https://mcusercontent.com/240809cc4dc04f7abc1c61167/images/956a724e-327c-4c54-ab46-3936f1bd2b26.png"
+            alt="TOGETHERWEAR" />
+        <h2>
+        <p>
+        <span class="variety">SAY HELLO TO #TOGETHERWEAR</span>  
+        </p>
+        <p>
+            It’s in our DNA to produce products that have a positive impact. Here’s exactly why we love it (and we think you will
+            too):
+        </p>    
+        <p>   
+            Made from 100% recycled yarns
+        </p>
+        <p>
+            Powered by green renewable energy
+        </p>
+        <p>
+            Global Recycle Standard (GRS) certified
+        </p>
+        <p>    
+            Organic Content Standard (OCS) certified
+        </p>
+        <p>    
+            Global Organic Textile Standard (GOTS) approved dyes
+        </p>
+        <p>
+            OekoTex 100 Class I certified
+        </p>
+        <p>    
+            Made at a Fair Wear Foundation member facility
+        </p>
+        <p>    
+            Packaged in recycled and recyclable materials
+        </p>
+        <p>    
+            Oh, and it looks great too...
+        </p>
+        <p>
+        <a href="https://togetherband.org/" target="_blank" class="learn-more">
+        </p>
+        <p>    
+           Find more about #TOGETHERBAND
+        </a>
+        </p>
+        </h2>
+        <button class="buy-button">
+            👉 SHOP #<span class="il">TOGETHERWEAR</span>
+        </button>
+        <p class="footer">
+            This page was built by Leticia Stocco
+        </p>
+    </div>
+    <script>
+         function buy() {
+                let name = prompt("What is your name?");
+                let email = prompt ("What is your email address?")
+                let appointment = prompt("Would you like to book appointment with one of our sustainability stylists?");
+                if (appointment === "Yes") {
+                        alert (
+                        " Thank you, " +
+                        name +         
+                        "!" +             
+                        " One of our sustainability stylists will be in touch shortly.✊♻️✨");
+                } else {      
+                        alert (
+                        " No worries, " +
+                        name +
+                        "!" +
+                        "Enjoy your sustainable experience in the Bottletop online store!♻️✨");
+        }
+      }
+      let buyButton = document.querySelector("button");
+      buyButton.addEventListener("click", buy);
+    </script>
+</body>
+</html>
